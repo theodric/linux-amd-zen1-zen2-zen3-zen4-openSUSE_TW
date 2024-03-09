@@ -28,6 +28,8 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
        the configured frequency range and governor settings. Since the latter can be scripted,
        I've simply put this into my /etc/crontab: `@reboot sleep 5; sudo systemctl restart tlp`
 
+       Why the above *isn't* an issue on 6.6.1 through 6.6.21 remains one of life's mysteries.
+
 
     Q: Why Zen2 on Fedora 38 and Zen3 on openSUSE?
     A: Because my Zen2 laptop runs Fedora 38, and my Zen3 desktop runs openSUSE Tumbleweed.
