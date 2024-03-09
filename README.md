@@ -1,4 +1,4 @@
-Kernel config files, tracking Arch [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), with modifications to support Zen2 on Fedora 38 and Zen3 on openSUSE Tumbleweed
+Kernel config files, tracking Arch [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), with modifications to support Fedora 38 (with Zen2) and openSUSE Tumbleweed (with Zen3).
 
 **NOTE**
 You will also need to obtain and apply the patch to support additional microarchitectures in the Linux kernel from graysky2
