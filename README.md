@@ -19,8 +19,9 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
     Q: Why does my Ryzen 7 4700U refuse to clock over 1.4GHz on any kernel 6.7.x, 
        but the same .config used on 6.6.x works fine?
 
-    A: Scaling seems to be fucked up by default. `cpupower frequency-set -f 2000000` should 
-       temporarily resolve this. (You can check `cpupower frequency-info` to confirm.)
+    A: Scaling seems to be fucked up by default for Zen2 on 6.7.x. 
+       `cpupower frequency-set -f 2000000` should temporarily resolve this. 
+       (You can check `cpupower frequency-info` to confirm.)
 
        On my system, for some reason, TLP does not work on boot, but requires either the power
        cable to be disconnected and reconnected, or else the service to be restarted to apply
