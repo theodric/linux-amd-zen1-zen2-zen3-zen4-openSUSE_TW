@@ -1,5 +1,13 @@
 Kernel config files, tracking Arch [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), with modifications to support Zen2 on Fedora 38 and Zen3 on openSUSE Tumbleweed
 
+**NOTE**
+You will also need to obtain and apply the patch to support additional microarchitectures in the Linux kernel from graysky2
+
+https://github.com/graysky2/kernel_compiler_patch
+
+Per the Arch PKGBUILD, simply download the relevant patch file into the root of your unpacked kernel source and run `git apply nameofpatchfile` to apply the patch, 
+ e.g. `git apply more-uarches-for-kernel-6.1.79-6.8-rc3.patch`
+
 ------------
 
 
