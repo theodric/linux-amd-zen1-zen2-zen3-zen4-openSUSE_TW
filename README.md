@@ -1,7 +1,10 @@
 Kernel config files, tracking Arch [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), with modifications to support Fedora 38 (with Zen2) and openSUSE Tumbleweed (with Zen3).
 
+You can build with these configs against the source archives available at kernel.org.
+
 **NOTE**
-You will also need to obtain and apply the patch to support additional microarchitectures in the Linux kernel from graysky2
+
+You will also need to obtain and apply the patch to support additional microarchitectures in the Linux kernel from graysky2 *before* building in order to avail of any of the Zen-specific enhancements!
 
 https://github.com/graysky2/kernel_compiler_patch
 
