@@ -19,8 +19,8 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
     A: Scaling seems to be fucked up by default. `cpupower frequency-set -f 2000000` should temporarily resolve this.
        (You can check `cpupower frequency-info` to confirm.)
        On my system, for some reason TLP does not work directly, but requires either the power cable to be 
-       disconnected and reconnected to apply the frequency range and governor settings, or for the service 
-       to be restarted. Since the latter can be scripted, I've simply put this into my /etc/crontab:
+       disconnected and reconnected, or else the service to be restarted to apply the configured frequency 
+       range and governor settings. Since the latter can be scripted, I've simply put this into my /etc/crontab:
        `@reboot sleep 5; sudo systemctl restart tlp`
 
 
