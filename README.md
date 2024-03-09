@@ -16,6 +16,7 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
     Q: Why does my Ryzen 7 4700U refuse to clock over 1.4GHz on any kernel 6.7.x, even when the same .config used on 6.6.x works fine?
     A: No fucking idea. 
 
+
     Q: Why Zen2 on Fedora 38 and Zen3 on openSUSE?
     A: Because my Zen2 laptop runs Fedora 38, and my Zen3 desktop runs openSUSE Tumbleweed.
 
