@@ -1,22 +1,21 @@
-# linux-amd-zen2-zen3
-Kernel config files, tracking Arch linux-amd-znver*, with modifications to support Fedora 38 and openSUSE Tumbleweed
+Kernel config files, tracking Arch linux-amd-znver*, with modifications to support Zen2 on Fedora 38 and Zen3 on openSUSE Tumbleweed
+
+------------
 
 
-____QNA____
-* Q: Why Zen2 on Fedora 38 and Zen3 on openSUSE?
-* A: Because my Zen2 laptop runs Fedora 38 and my Zen3 desktop runs openSUSE Tumbleweed
+**QnA**
 
--
+    Q: Why Zen2 on Fedora 38 and Zen3 on openSUSE?
+    A: Because my Zen2 laptop runs Fedora 38, and my Zen3 desktop runs openSUSE Tumbleweed
 
-* Q: Will you provide other builds?
-* A: No
 
--
+    Q: Will you provide other builds to support other combinations of architectures/distributions?
+    A: Yes! If buy me the computer to do it on.
 
-* Q: Why not?
-* A: Pay me.
 
--
+    Q: I don't want to buy you a computer. Why not otherwise?
+    A: Pay me.
 
-* Q: You sound like an asshole
-* A: You catch on quickly.
+
+    Q: Hey you kinda sound like an asshole, man
+    A: You catch on quickly. Your mother would be very proud.
