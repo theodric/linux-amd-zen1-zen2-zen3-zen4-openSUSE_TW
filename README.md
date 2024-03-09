@@ -29,10 +29,10 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
 
 
     Q: Will you provide other builds to support other combinations of architectures/distributions?
-    A: Yes! If buy me the computer to do it on.
+    A: Yes! If you buy me the computer to do it with.
 
 
-    Q: I don't want to buy you a computer. Why not otherwise?
+    Q: I don't want to buy you a computer. Why won't you do it anyway?
     A: Pay me.
 
 
