@@ -13,7 +13,8 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
 
 **QnA**
 
-    Q: Why does my Ryzen 7 4700U refuse to clock over 1.4GHz on any kernel 6.7.x, but the same .config used on 6.6.x works fine?
+    Q: Why does my Ryzen 7 4700U refuse to clock over 1.4GHz on any kernel 6.7.x, 
+       but the same .config used on 6.6.x works fine?
     A: Scaling seems to be fucked up by default. ` cpupower frequency-set -f 2000000 ` should temporarily resolve this.
        (You can check ` cpupower frequency-info ` to confirm)
 
