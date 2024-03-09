@@ -10,8 +10,8 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
 
 ------------
 
-
 **QnA**
+
 
     Q: Why does my Ryzen 7 4700U refuse to clock over 1.4GHz on any kernel 6.7.x, 
        but the same .config used on 6.6.x works fine?
@@ -38,3 +38,4 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
 
     Q: Hey you kinda sound like an asshole, man.
     A: You catch on quickly. Your mother would be very proud.
+
