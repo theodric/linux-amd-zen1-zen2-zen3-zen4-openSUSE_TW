@@ -9,7 +9,7 @@ You will also need to obtain and apply the patch to support additional microarch
 https://github.com/graysky2/kernel_compiler_patch
 
 Per the Arch PKGBUILD, simply download the relevant patch file into the root of your unpacked kernel source and run `git apply nameofpatchfile` to apply the patch, 
- e.g. `git apply more-uarches-for-kernel-6.1.79-6.8-rc3.patch`
+ e.g. `git apply more-uarches-for-kernel-6.8-rc4+.patch`
 
 ------------
 
