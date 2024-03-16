@@ -1,6 +1,6 @@
-Kernel config files, tracking Arch packages [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), with modifications to support Fedora 38 (with Zen2) and openSUSE Tumbleweed (with Zen3).
+Kernel config files, tracking Arch packages [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), with modifications to support Fedora 38 (with Zen2) and openSUSE Tumbleweed (with Zen3) - primarily modifications around EFI booting. (Using the Arch config files unmodified on Fedora and openSUSE will result in a kernel that cannot boot.)
 
-You can build with these configs against the source archives available at kernel.org.
+You can build with these configs against the kernel source archives available at kernel.org.
 
 **NOTE**
 
