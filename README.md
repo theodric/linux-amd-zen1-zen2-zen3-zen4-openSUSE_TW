@@ -12,7 +12,7 @@ I `make oldconfig` this against the previous kernel version's config, and apply 
 
 I now configure a non-preemptible kernel by default on zen3 only, but as of 6.11.x I enable the option to configure your preemption model at boot (`PREEMPT_DYNAMIC`) on both zen2 and zen3. 
 
-In short, simply specify one of these options in your cmdline to select the preemption model appropriate to your use case:
+Simply specify one of these options in your cmdline to select the preemption model appropriate to your use case:
 
 `preempt=none`
 
