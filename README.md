@@ -43,6 +43,6 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
     Q: I don't want to buy you a computer. Why won't you do it anyway?
     A: Pay me.
 
-    Q: Hey you kinda sound like an asshole, man.
+    Q: Hey, you kinda sound like an asshole, man!
     A: You catch on quickly. Your mother would be very proud.
 
