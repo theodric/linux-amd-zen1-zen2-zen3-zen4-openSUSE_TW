@@ -7,7 +7,17 @@ You can build with these configs against the kernel source archives available at
 **NOTES SPECIFIC TO MY CHANGES**
 
 I `make oldconfig` this against the previous kernel version's config, and apply common sense in updating the config for general use. 
-I now configure a non-preemptible kernel by default on zen3 only, but as of 6.11.x I enable the option to configure your preemption model at boot (`PREEMPT_DYNAMIC`) on both zen2 and zen3. Information about this option is available at the [LKDDB](https://cateee.net/lkddb/web-lkddb/PREEMPT_DYNAMIC.html).
+
+I now configure a non-preemptible kernel by default on zen3 only, but as of 6.11.x I enable the option to configure your preemption model at boot (`PREEMPT_DYNAMIC`) on both zen2 and zen3. 
+
+In short, simply specify one of these options in your cmdline to select the preemption model appropriate to your use case:
+
+`preempt=none
+preempt=voluntary
+preempt=full
+`
+
+More information about this option is available at the [LKDDB](https://cateee.net/lkddb/web-lkddb/PREEMPT_DYNAMIC.html).
 
 **USAGE**
 
