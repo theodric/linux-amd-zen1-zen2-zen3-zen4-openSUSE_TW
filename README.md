@@ -4,9 +4,13 @@ In theory, these architecture-specific optimizations will net you a whole 1% per
 
 You can build with these configs against the kernel source archives available at [kernel.org](https://kernel.org).
 
-**NOTE**
+**NOTES SPECIFIC TO MY CHANGES**
+I 'make oldconfig' this against the previous kernel version's config, and apply common sense in updating the config for general use. 
+I now configure a non-preemptible kernel by default on zen3 only, but as of 6.11.x I enable the option to configure your preemption model at boot (`PREEMPT_DYNAMIC`) on both zen2 and zen3. Information about this option is available at the [LKDDB](https://cateee.net/lkddb/web-lkddb/PREEMPT_DYNAMIC.html).
 
-To support additional microarchitectures in the Linux kernel, you need to apply graysky2's patch *before* building, or you will lose out on those sick gainZ (over 1%!)
+**USAGE**
+
+To support additional microarchitectures in the Linux kernel, you need to apply graysky2's patch *before* building, or you will lose out on those sick 1% gainZ!
 
 I have included a copy of graysky2's kernel 6.8+ uarch patch in this repo.
 
