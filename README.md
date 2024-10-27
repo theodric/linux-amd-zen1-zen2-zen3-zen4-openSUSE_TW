@@ -4,6 +4,8 @@ In theory, these architecture-specific optimizations will net you a whole 1% per
 
 You can build with these configs against the kernel source archives available at [kernel.org](https://kernel.org).
 
+
+
 **NOTES SPECIFIC TO MY CHANGES**
 
 I `make oldconfig` this against the previous kernel version's config, and apply common sense in updating the config for general use. 
@@ -19,6 +21,8 @@ In short, simply specify one of these options in your cmdline to select the pree
 `preempt=full`
 
 More information about this option is available at the [LKDDB](https://cateee.net/lkddb/web-lkddb/PREEMPT_DYNAMIC.html).
+
+
 
 **USAGE**
 
