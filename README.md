@@ -4,12 +4,16 @@ You can build with these configs against the kernel source archives available at
 
 **NOTE**
 
-You will also need to obtain and apply the patch to support additional microarchitectures in the Linux kernel from graysky2 *before* building in order to avail of any of the Zen-specific enhancements!
+To support additional microarchitectures in the Linux kernel, you need to apply graysky2's patch *before* building, or you will lose out on those sick gainZ (over 1%!)
 
+I have included a copy of graysky2's kernel 6.8+ uarch patch in this repo.
+
+If you don't trust me, which you shouldn't, you can obtain and apply the patch directly from them, here:
 https://github.com/graysky2/kernel_compiler_patch
 
 Per the Arch PKGBUILD, simply download the relevant patch file into the root of your unpacked kernel source and run `git apply nameofpatchfile` to apply the patch, 
- e.g. `git apply more-uarches-for-kernel-6.8-rc4+.patch`
+ e.g. `git apply more-ISA-levels-and-uarches-for-kernel-6.8-rc4+.patch`
+
 
 ------------
 
