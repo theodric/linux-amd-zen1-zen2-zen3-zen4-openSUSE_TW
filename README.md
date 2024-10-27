@@ -13,7 +13,9 @@ I now configure a non-preemptible kernel by default on zen3 only, but as of 6.11
 In short, simply specify one of these options in your cmdline to select the preemption model appropriate to your use case:
 
 `preempt=none
+
 preempt=voluntary
+
 preempt=full
 `
 
