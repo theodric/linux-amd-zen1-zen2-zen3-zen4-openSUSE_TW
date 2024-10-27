@@ -68,3 +68,8 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
     Q: Hey, you kinda sound like an asshole, man!
     A: You catch on quickly. Your mother would be very proud.
 
+-----------
+
+You may also find this useful:
+
+A script to [get Latest linux kernel path from kernel.org](https://gist.github.com/adityaka/c173d241f03d69853c47b2937fd310c6)
