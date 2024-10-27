@@ -8,7 +8,7 @@ To support additional microarchitectures in the Linux kernel, you need to apply 
 
 I have included a copy of graysky2's kernel 6.8+ uarch patch in this repo.
 
-If you don't trust me, which you shouldn't, you can obtain and apply the patch directly from them, here:
+If you don't trust me, which you shouldn't, you can obtain the patch directly from them, here:
 https://github.com/graysky2/kernel_compiler_patch
 
 Per the Arch PKGBUILD, simply download the relevant patch file into the root of your unpacked kernel source and run `git apply nameofpatchfile` to apply the patch, 
