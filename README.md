@@ -12,6 +12,8 @@ A script (`gitter.sh`), the contents of which were wholly stolen from https://gi
 
 I `make oldconfig` this against the previous kernel version's config, and apply common sense in updating the config for general use. 
 
+I test-boot the new kernel on my own system before shipping the config file, so you may rely on that it at least #worksforme
+
 As of 6.11.x I enable the option to configure your preemption model at boot (`PREEMPT_DYNAMIC`) on both zen2 and zen3. The default mode if you do not specify a model is is PREEMPT_VOLUNTARY, suitable for desktop usage.
 
 Simply specify one of these options in your cmdline to select the preemption model appropriate to your use case:
