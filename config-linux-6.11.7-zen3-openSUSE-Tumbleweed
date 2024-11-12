@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 6.11.6 Kernel Configuration
+# Linux/x86 6.11.7 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="gcc (SUSE Linux) 14.2.1 20241007 [revision 4af44f2cf7d281f3e4f3957efce10e8b2ccb2ad3]"
 CONFIG_CC_IS_GCC=y
