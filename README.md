@@ -53,18 +53,24 @@ Per the Arch PKGBUILD, simply download the relevant patch file into the root of 
 Copy the appropriate config file to /path/to/kernelsourcedirectory/.config, optionally configure the kernel further normally if you like (`make nconfig`), then build it with the `-march` flag appropriate to your system: znver1, znver2, znver3; e.g. `-march=znver3 -mtune=znver3`.
 
 set:
+
 `CXXFLAGS=-march=znver3 -mtune=znver3`
+
 `CFLAGS="-march=znver3 -mtune=znver3"`
+
 `KCFLAGS="-march=znver3 -mtune=znver3"` 
 
 Build the kernel:
+
 `make; make modules_install; make install`
 
 then update /etc/default/grub if you want, and finally run 
+
 `grub2-mkconfig -o /boot/grub2/grub.cfg`
+
 to add the new kernel to your bootloader.
 
-I have included a 'maker.sh' which I recommend you don't use, but have a look at it. I am an insaniac and build my kernels with `-Ofast -pipe -march=znver3 -mtune=znver3 -fstack-protector-strong`. So far, I'm getting away with it. \
+I have included a 'maker.sh' which I recommend you don't use, but have a look at it. I am an insaniac and build my kernels with `-Ofast -pipe -march=znver3 -mtune=znver3 -fstack-protector-strong`. So far, I'm getting away with it.
 
 ------------
 
