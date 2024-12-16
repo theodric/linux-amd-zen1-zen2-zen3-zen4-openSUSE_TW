@@ -1,4 +1,4 @@
-Kernel config files, tracking Arch packages [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), with modifications to support Fedora 38 (with Zen2) and openSUSE Tumbleweed (with Zen3) - primarily modifications around EFI booting. (Using the Arch config files unmodified on Fedora and openSUSE will result in a kernel that cannot boot.)
+Kernel config files, tracking Arch packages [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), with modifications to support openSUSE Tumbleweed on Zen1, Zen2, and Zen3 - primarily modifications around EFI booting. (Using the Arch config files unmodified on Fedora and openSUSE will result in a kernel that cannot boot.)
 
 In theory, these architecture-specific optimizations will net you a whole 1% performance improvement over generic, according to the patch notes. Given the price of power these days, I'll take that over paying more to overclock.
 
