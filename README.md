@@ -6,15 +6,25 @@ You can build with these configs against the kernel source archives available at
 
 A script (`gitter.sh`), the contents of which were wholly stolen from https://gist.github.com/adityaka/c173d241f03d69853c47b2937fd310c6 (and then corrected) is provided to `wget` the latest kernel source automatically. At some point I'll figure out why it doesn't work with `aria2c`.
 
+**LATEST UPDATE**
 
+_AS OF 2024-12-16 I have added support for Zen1/Zen1+ "Renoir" systems, since I am now dailying a Zen1+ device_
+
+_AS OF 2024-12-16 I have dropped support for Fedora because I have finished evicting Fedora from my life. All configs now support openSUSE Tumbleweed **only**_
 
 **NOTES SPECIFIC TO MY CHANGES**
 
-I `make oldconfig` this against the previous kernel version's config, and apply common sense in updating the config for general use. 
+The basis for these configs is the linux-amd-znver3 config file from Arch. I diff this against the shipped config from openSUSE, and then add features/modules specified in openSUSE's config until my system boots and works normally, as well as adding sensible generic features to aid in compatibility across devices. The config is therefore closer to Arch's than openSUSE's, but matches neither exactly.
 
-I test-boot the new kernel on my own system before shipping the config file, so you may rely on that it at least #worksforme
+For each subsequent update, I `make oldconfig` this against the previous kernel version's config, and apply common sense in updating the config for general use. I may add support for additional new features if they sound cool.
 
-As of 6.11.x I enable the option to configure your preemption model at boot (`PREEMPT_DYNAMIC`) on both zen2 and zen3. The default mode if you do not specify a model is is PREEMPT_VOLUNTARY, suitable for desktop usage.
+I test-boot the new kernel on my own system before shipping the config file, so you may rely on that it at least #worksforme on these devices, all running the latest openSUSE Tumbleweed:
+
+* Zen3: Biostar B550T-Silver + Ryzen 5700G
+* Zen2: ThinkPad E14 gen2 AMD, Ryzen 4700U
+* Zen1+: ThinkPad C13 gen1 AMD, Ryzen 3500C (3500U)
+
+As of kernel 6.11.x I enable the option to configure your preemption model at boot (`PREEMPT_DYNAMIC`) on all zen generations. The default mode if you do not specify a model is is PREEMPT_VOLUNTARY, suitable for desktop usage.
 
 Simply specify one of these options in your cmdline to select the preemption model appropriate to your use case:
 
