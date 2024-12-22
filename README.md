@@ -22,7 +22,9 @@ I test-boot the new kernel on my own system before shipping the config file, so 
 
 * Zen3: Biostar B550T-Silver + Ryzen 5700G
 * Zen2: ThinkPad E14 gen2 AMD, Ryzen 4700U
-* Zen1+: ThinkPad C13 gen1 AMD, Ryzen 3500C (3500U)
+* Zen1: ThinkPad C13 gen1 AMD, Ryzen 3500C (3500U)
+
+The Zen1 kernel has significant differences in available drivers due to the weird architecture of my Zen1 system, an ex-Chromebook, but should also work universally. If you'd like to run a 'MORPHIUS' Chromebook on openSUSE with the most optimized kernel possible, this is exactly what you need. The configs for Zen2 and Zen3 should be more-or-less interchangeable with each other, and are much closer to the Arch configs.
 
 As of kernel 6.11.x I enable the option to configure your preemption model at boot (`PREEMPT_DYNAMIC`) on all zen generations. The default mode if you do not specify a model is is PREEMPT_VOLUNTARY, suitable for desktop usage.
 
