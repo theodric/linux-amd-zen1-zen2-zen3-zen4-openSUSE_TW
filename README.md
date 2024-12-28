@@ -4,9 +4,9 @@ In theory, these architecture-specific optimizations will net you a whole 1% per
 
 You can build with these configs against the kernel source archives available at [kernel.org](https://kernel.org).
 
-A script (`gitter.sh`), the contents of which were wholly stolen from https://gist.github.com/adityaka/c173d241f03d69853c47b2937fd310c6 (and then corrected) is provided to `wget` the latest kernel source automatically. At some point I'll figure out why it doesn't work with `aria2c`.
+A script (`gitter.sh`), the contents of which were wholly stolen from https://gist.github.com/adityaka/c173d241f03d69853c47b2937fd310c6 (and then corrected) is provided to use `aria2c` (or `wget`, if you edit the script) to obtain the latest kernel source automatically.
 
-**LATEST UPDATE**
+**LATEST MAJOR CHANGES**
 
 _AS OF 2024-12-16 I have added support for Zen1/Zen1+ "Renoir" systems, since I am now dailying a Zen1+ device_
 
