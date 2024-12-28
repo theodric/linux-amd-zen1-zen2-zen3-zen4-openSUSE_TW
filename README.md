@@ -14,7 +14,7 @@ _AS OF 2024-12-16 I have dropped support for Fedora because I have finished evic
 
 **NOTES SPECIFIC TO MY CHANGES**
 
-The basis for these configs is the linux-amd-znver3 config file from Arch. I diff this against the shipped config from openSUSE, and then add features/modules specified in openSUSE's config until my system boots and works normally, as well as adding sensible generic features to aid in compatibility across devices. The config is therefore closer to Arch's than openSUSE's, but matches neither exactly.
+The basis for these configs is the linux-amd-znver3 config file from Arch. I diff this against the shipped config from openSUSE, and then add features/modules specified in openSUSE's config until my system boots and works normally, as well as adding sensible generic features to aid in compatibility across devices. The config is therefore closer to Arch's than openSUSE's, but matches neither exactly. All Intel-specific config that is not relevant to Intel devices on AMD platforms has been removed.
 
 For each subsequent update, I `make oldconfig` this against the previous kernel version's config, and apply common sense in updating the config for general use. I may add support for additional new features if they sound cool.
 
