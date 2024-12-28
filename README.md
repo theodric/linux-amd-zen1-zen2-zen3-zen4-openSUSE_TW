@@ -84,11 +84,12 @@ I have included a 'maker.sh' which I recommend you don't use, but have a look at
     Q: Why does my Ryzen 7 4700U refuse to clock over 1.4GHz on any kernel 6.7.x, 
        but the same .config used on 6.6.x works fine?
 
-    A: Scaling seems to be fucked up by default for Zen2 on 6.7.x. 
-       `cpupower frequency-set -f 2000000` should temporarily resolve this. 
+    A: Scaling seems to be fucked up with schedutil. Switching to `ondemand` or another governor
+       will work out better for you. I set `ondemand` by default in my configs as of 6.7-something.
+       `cpupower frequency-set -f 2000000` should temporarily resolve this if you find yourself afflicted. 
        (You can check `cpupower frequency-info` to confirm.)
 
-       On my system, for some reason, TLP does not work on boot, but requires either the power
+       On Fedora 38, for some reason, TLP does not always work on boot, but requires either the power
        cable to be disconnected and reconnected, or else the service to be restarted to apply
        the configured frequency range and governor settings. Since the latter can be scripted,
        I've simply put this into my /etc/crontab: `@reboot sleep 5; sudo systemctl restart tlp`
