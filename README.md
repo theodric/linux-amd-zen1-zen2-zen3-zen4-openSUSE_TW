@@ -20,6 +20,7 @@ For each subsequent update, I `make oldconfig` this against the previous kernel 
 
 I test-boot the new kernel on my own system before shipping the config file, so you may rely on that it at least #worksforme on these devices, all running the latest openSUSE Tumbleweed:
 
+* Zen4: ThinkPad P14s Gen5 AMD, Ryzen 8840HS (coming soon)
 * Zen3: Biostar B550T-Silver + Ryzen 5700G
 * Zen2: ThinkPad E14 gen2 AMD, Ryzen 4700U
 * Zen1: ThinkPad C13 gen1 AMD, Ryzen 3500C (3500U)
