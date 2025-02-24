@@ -8,6 +8,8 @@ A script (`gitter.sh`), the contents of which were wholly stolen from https://gi
 
 **LATEST MAJOR CHANGES**
 
+_AS OF 2025-02-23 I have added support for zen4 and the ThinkPad P14s Gen5 AMD_
+
 _AS OF 2024-12-16 I have added support for Zen1/Zen1+ "Renoir" systems, since I am now dailying a Zen1+ device_
 
 _AS OF 2024-12-16 I have dropped support for Fedora because I have finished evicting Fedora from my life. All configs now support openSUSE Tumbleweed **only**_
@@ -20,7 +22,7 @@ For each subsequent update, I `make oldconfig` this against the previous kernel 
 
 I test-boot the new kernel on my own system before shipping the config file, so you may rely on that it at least #worksforme on these devices, all running the latest openSUSE Tumbleweed:
 
-* Zen4: ThinkPad P14s Gen5 AMD, Ryzen 8840HS (coming soon)
+* Zen4: ThinkPad P14s Gen5 AMD, Ryzen 8840HS
 * Zen3: Biostar B550T-Silver + Ryzen 5700G
 * Zen2: ThinkPad E14 gen2 AMD, Ryzen 4700U
 * Zen1: ThinkPad C13 gen1 AMD, Ryzen 3500C (3500U)
