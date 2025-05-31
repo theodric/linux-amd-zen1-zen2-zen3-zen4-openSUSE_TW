@@ -8,6 +8,8 @@ A script (`gitter.sh`), the contents of which were wholly stolen from https://gi
 
 **LATEST MAJOR CHANGES**
 
+_AS OF 2025-05-31 this is probably not useful to most people apart from perhaps the zen4/ThinkPad P14s Gen5 AMD configs. I have redone the configs from scratch, starting with `make localmodconfig` as the foundation, then adding additional modules until I reach the required level of functionality for my use case. Additionally, 6.15.x breaks/obsoletes the patchset from graysky2 as 6.15 incorporates `-march=native` support. 
+
 _AS OF 2025-02-23 I have added support for zen4 and the ThinkPad P14s Gen5 AMD_
 
 _AS OF 2024-12-16 I have added support for Zen1/Zen1+ "Renoir" systems, since I am now dailying a Zen1+ device_
