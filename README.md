@@ -33,10 +33,10 @@ For each subsequent update, I `make oldconfig` this against the previous kernel 
 
 I test-boot the new kernel on my own system before shipping the config file, so you may rely on that it at least #worksforme on these devices, all running the latest openSUSE Tumbleweed:
 
-* Zen4: ThinkPad P14s Gen5 AMD, Ryzen 8840HS
-* Zen3: Biostar B550T-Silver + Ryzen 5700G
-* Zen2: ThinkPad E14 gen2 AMD, Ryzen 4700U
-* Zen1: ThinkPad C13 gen1 AMD, Ryzen 3700C (3700U)
+* Zen4: ThinkPad P14s Gen5 AMD, Ryzen 7 Pro 8840HS
+* Zen3: Biostar B550T-Silver + Ryzen 7 5700G
+* Zen2: ThinkPad E14 gen2 AMD, Ryzen 7 4700U
+* Zen1: ThinkPad C13 gen1 AMD, Ryzen 7 3700C (3700U)
 
 The Zen1 kernel has significant differences in available drivers due to the weird architecture of my Zen1 system, an ex-Chromebook, but should also work universally. If you'd like to run a 'MORPHIUS' Chromebook on openSUSE with the most optimized kernel possible, this is exactly what you need. The configs for Zen2 and Zen3 should be more-or-less interchangeable with each other, and are much closer to the Arch configs.
 
