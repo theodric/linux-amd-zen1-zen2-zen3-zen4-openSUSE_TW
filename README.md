@@ -10,8 +10,12 @@ A script (`gitter.sh`), the contents of which were wholly stolen from https://gi
 
 *IMPORTANT NOTE*
 
-_AS OF 2025-11-14 I have finally got the damage from the migration from 6.14.11 to 6.15+ undone, and have begun shipping kernel configs based on the new source tree. graysky2's patches are essentially obsolete now, but they have continued to update them for 6.16+, and I've included the most recent patch in this repo. This is, as they say, primarily useful if you want to build an optimized kernel on a system with different hardware. Given the difference in build time between a 3700C and an 8840HS or 5700G, it's still useful to me.
-Zen1 and Zen4 minconfigs are probably still useful for others, since I am targeting the Zen1 ThinkPad C13 Yoga (mrchromebox) and Zen4 ThinkPad P14s Gen5 AMD with those; both of which are stable targets. I include the necessary modules to enable docker (and therefore also iptables-nft *in legacy mode* [ffs docker, get your shit together]) and wireguard. I am currently building PREEMPT_RT because I got bored and decided to undermine performance on my systems, but you can switch that to something sensible before building.
+_AS OF 2025-11-14_  
+I have finally mitigated the damage from the migration from 6.14.11 to 6.15+, and am shipping kernel configs based on the new source tree.
+* graysky2's patches are essentially obsolete now, but they have continued to update them for 6.16+, and I've included the most recent patch in this repo. This is, as they say, primarily useful if you want to build an optimized kernel on a system with different hardware. Given the difference in build time between a 3700C and an 8840HS or 5700G, it's still useful to me.
+* Zen1 and Zen4 minconfigs are probably still useful for others, since I am targeting the Zen1 ThinkPad C13 Yoga (mrchromebox) and Zen4 ThinkPad P14s Gen5 AMD with those; both of which are stable targets.
+* I include the necessary modules to enable docker (and therefore also iptables-nft *in legacy mode* [ffs docker, get your shit together]) and wireguard.
+* I am currently building PREEMPT_RT because I got bored and decided to undermine performance on my systems for novelty reasons, but you can switch that to something sensible before building.
 
 _AS OF 2025-05-31 this is probably not useful to most people_ (apart from perhaps the zen4/ThinkPad P14s Gen5 AMD configs, since that is a commonly-available hardware set). I have redone the configs from scratch, starting with `make localmodconfig` as the foundation, then adding additional modules until I reach the required level of functionality for my use case. Additionally, 6.15.x breaks/obsoletes the patchset from graysky2 as 6.15 incorporates `-march=native` support. I will continue to back up my configs here.
 
