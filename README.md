@@ -1,7 +1,8 @@
-Kernel config files, originally based on Arch AUR packages [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), although now not bearing any particular resemblance to them, but with modifications to support openSUSE Tumbleweed on Zen1, Zen2, Zen3, and Zen4 - primarily modifications around EFI booting, docker, VPN support, specific hardware target support, and optimal performance on AMD.
+Kernel config files, originally based on Arch AUR packages [linux-amd-znver2](https://aur.archlinux.org/packages/linux-amd-znver2 "linux-amd-znver2") and [linux-amd-znver3](https://aur.archlinux.org/packages/linux-amd-znver3 "linux-amd-znver3"), although now not bearing any particular resemblance to them, but with modifications to support openSUSE Tumbleweed on Zen1, Zen2, Zen3, and Zen4 - primarily modifications around EFI booting, docker, VPN support, specific hardware target support, and optimal performance on AMD.  
+
 The configs that may actually be of value to others are:
-* zen1 - customized for the Lenovo ThinkPad C13 Yoga Chromebook with mrchromebox firmware, running openSUSE
-* zen4 - customized for the Lenovo ThinkPad P14s / T14 Gen 5 AMD, running openSUSE
+* zen1 - customized for the Lenovo ThinkPad C13 Yoga Chromebook with mrchromebox firmware, running openSUSE Tumbleweed
+* zen4 - customized for the Lenovo ThinkPad P14s / T14 Gen 5 AMD, running openSUSE Tumbleweed
 
 You can build with these configs against the kernel source archives available at [kernel.org](https://kernel.org).
 
