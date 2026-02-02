@@ -31,7 +31,7 @@ echo KCFLAGS = "$KCFLAGS"
 read -p "Build time. Ctrl-C now to break out, or press any key to build the kernel..."
 
 time make -j $(($(nproc) + 1))
-sudo make modules_install
+sudo make -j $(($(nproc) + 1)) modules_install
 sudo make install
 
 echo Updating bootloader config...
