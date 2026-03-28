@@ -3,6 +3,10 @@ git apply /usr/src/kernel_compiler_patch/more-ISA-levels-and-uarches-for-kernel-
 make oldconfig;
 make nconfig;
 read -p "Ctrl-C now to break out, or press any key to build the kernel..."
-sudo CXXFLAGS="-Ofast -pipe -march=znver4 -mtune=znver4 -fstack-protector-strong" CFLAGS="-Ofast -pipe -march=znver4 -mtune=znver4 -fstack-protector-strong" KCFLAGS="-Ofast -pipe -march=znver4 -mtune=znver4 -fstack-protector-strong" make -j $(($(nproc) + 1));
-make modules_install;
-make install;
+
+export CXXFLAGS="-Ofast -pipe -march=znver4 -mtune=znver4 -fstack-protector-strong"
+export CFLAGS="-Ofast -pipe -march=znver4 -mtune=znver4 -fstack-protector-strong"
+export KCFLAGS="-Ofast -pipe -march=znver4 -mtune=znver4 -fstack-protector-strong"
+make -j $(($(nproc) + 1))
+make modules_install
+make install
