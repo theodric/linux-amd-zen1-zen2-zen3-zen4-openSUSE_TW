@@ -1,0 +1,27 @@
+drinkpad:/usr/src/linux-6.14.11> git apply ../linux-amd-zen1-zen2-zen3-zen4-openSUSE_TW/zen1/6.14.11-patches/more-ISA-levels-and-uarches-for-kernel-6.8-rc4+.patch
+
+drinkpad:/usr/src/linux-6.14.11> patch -p1 < ../linux-amd-zen1-zen2-zen3-zen4-openSUSE_TW/zen1/6.14.11-patches/0001-linux6.14.9-bore5.9.6.patch 
+patching file include/linux/sched.h
+patching file include/linux/sched/bore.h
+patching file init/Kconfig
+patching file kernel/Kconfig.hz
+patching file kernel/fork.c
+patching file kernel/sched/Makefile
+patching file kernel/sched/bore.c
+patching file kernel/sched/core.c
+patching file kernel/sched/debug.c
+patching file kernel/sched/fair.c
+patching file kernel/sched/sched.h
+
+drinkpad:/usr/src/linux-6.14.11> patch -p1 < ../linux-amd-zen1-zen2-zen3-zen4-openSUSE_TW/zen1/6.14.11-patches/0002-sched-fair-Prefer-full-idle-SMT-cores.patch 
+patching file kernel/sched/fair.c
+Hunk #1 succeeded at 7596 (offset 45 lines).
+Hunk #2 succeeded at 7614 (offset 45 lines).
+Hunk #3 succeeded at 7714 (offset 45 lines).
+Hunk #4 succeeded at 7730 (offset 45 lines).
+Hunk #5 succeeded at 7829 (offset 45 lines).
+Hunk #6 succeeded at 7900 (offset 45 lines).
+Hunk #7 succeeded at 7908 (offset 45 lines).
+Hunk #8 succeeded at 7940 (offset 45 lines).
+Hunk #9 succeeded at 7976 (offset 45 lines).
+drinkpad:/usr/src/linux-6.14.11> patch 
