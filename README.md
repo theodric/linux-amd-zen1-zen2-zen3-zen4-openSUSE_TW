@@ -12,6 +12,9 @@ A script (`gitter.sh`), the contents of which were wholly stolen from https://gi
 
 *IMPORTANT NOTE*
 
+_AS OF 2026-08-17_  
+I got rid of the zen4 system. I briefly had an i7-3615QE ThinkPad X230 in the rotation, but it bricked on reboot. Back down to zen1 and zen3 until or unless this AI-pocalypse nonsense ends.
+
 _AS OF 2025-11-14_  
 I have finally mitigated the damage from the migration from 6.14.11 to 6.15+, and am shipping kernel configs based on the new source tree.
 * graysky2's patches are essentially obsolete now, but they have continued to update them for 6.16+, and I've included the most recent patch in this repo. This is, as they say, primarily useful if you want to build an optimized kernel on a system with different hardware. Given the difference in build time between a 3700C and an 8840HS or 5700G, it's still useful to me.
