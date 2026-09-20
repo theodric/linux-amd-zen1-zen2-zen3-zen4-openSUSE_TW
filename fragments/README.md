@@ -13,3 +13,4 @@ cut -d= -f1 nf-new.cfg | sort > nf-new-keys
 grep -F -f nf-new-keys nf-good.cfg > nf-good-pruned.cfg
 mv nf-good-pruned.cfg fragment-netfilter.cfg
 ```
+
